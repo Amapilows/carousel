@@ -3,15 +3,14 @@ import ImageSlide from './imageSlide';
 import Arrow from './arrow';
 
 const imgUrls = [
-  "https://cdn.pixabay.com/photo/2019/08/08/13/52/elephant-4393034_1280.jpg", 
-  "https://cdn.pixabay.com/photo/2019/03/12/12/47/people-4050698_1280.jpg",
-  "https://cdn.pixabay.com/photo/2019/08/07/09/12/flowers-4390337_1280.jpg"
+  "http://es.web.img3.acsta.net/r_1920_1080/pictures/17/02/06/17/01/343859.jpg", 
+  "http://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/35/18/37/18370105.jpg",
+  "http://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/35/23/94/18388937.jpg"
 ];
 
 const style = {
-    height: '250px',
-    width: '500px',
-    display: 'flex',
+  height: '500px',
+  width: '500px',
 };
 
 class Carousel extends React.Component {
@@ -29,7 +28,6 @@ class Carousel extends React.Component {
     const currentImageIndex = this.state.currentImageIndex;
     const shouldResetIndex = currentImageIndex === 0;
     const index =  shouldResetIndex ? lastIndex : currentImageIndex - 1;
-    console.log(index)
     this.setState({
       currentImageIndex: index
     });
@@ -40,7 +38,6 @@ class Carousel extends React.Component {
     const currentImageIndex = this.state.currentImageIndex;
     const shouldResetIndex = currentImageIndex === lastIndex;
     const index =  shouldResetIndex ? 0 : currentImageIndex + 1;
-    console.log(index)
     this.setState({
       currentImageIndex: index
     });

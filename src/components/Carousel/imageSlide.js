@@ -4,10 +4,11 @@ const ImageSlide = (imgUrls) => {
   const img = imgUrls.url;
   const style = {
     backgroundImage: `url(${img})`,
-    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
-    width: '200px',
-    height: '100px'
+    backgroundRepeat: 'no-repeat',
+    width: '100%',
+    height: '100%'
   };
 
 

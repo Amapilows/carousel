@@ -7,9 +7,12 @@ function App() {
   return (
     <React.Fragment>
       <h3>Aquí se debería mostrar variadas fotos de Keanu </h3>
-      <div className="contenedor-slide"> 
-        <Carousel />
+      <div className="test">
+        <div className="container"> 
+          <Carousel />
+        </div>
       </div>
+
 
     </React.Fragment>
 
